@@ -259,8 +259,8 @@ class LimitSurfaceFitter:
                 if self.settings.add_subd_modifier: joined_obj.modifiers.new(name="Subdivision", type='SUBSURF')
                 if self.settings.add_smooth_modifier: joined_obj.modifiers.new(name="Smooth", type='SMOOTH')
                 if self.settings.add_weld_modifier: joined_obj.modifiers["Weld"].merge_threshold = 0.0001
-                if self.settings.add_subd_modifier: joined_obj.modifiers["Subdivision"].levels = 1
-                if self.settings.add_smooth_modifier: joined_obj.modifiers["Smooth"].iterations = 4
+                if self.settings.add_subd_modifier: joined_obj.modifiers["Subdivision"].levels = 3
+                if self.settings.add_smooth_modifier: joined_obj.modifiers["Smooth"].iterations = 1
         return nurbs_col
     def _create_psychopatch_objects(self, patches, col_name):
         template_obj = bpy.data.objects.get("NURBS Patch") or append_object_from_surfacepsycho_assets("NURBS Patch")
