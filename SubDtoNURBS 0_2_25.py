@@ -51,7 +51,7 @@ def is_patch_truly_flat(patch, tolerance=1e-4):
     return True
 def append_object_from_surfacepsycho_assets(object_name: str):
     try:
-        extensions_path = Path(bpy.utils.resource_path('USER')) / "extensions" / "user_default" / "surfacepsycho" / "assets" / "assets.blend"
+        extensions_path = Path(bpy.utils.resource_path('USER')) / "extensions" / "blender_org" / "surfacepsycho" / "assets" / "assets.blend"
         if not extensions_path.exists(): return None
         with bpy.data.libraries.load(str(extensions_path), link=False) as (data_from, data_to):
             if object_name in data_from.objects: data_to.objects = [object_name]
