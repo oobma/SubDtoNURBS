@@ -4,7 +4,7 @@
 #
 
 bl_info = {
-    "name": "SubD to NURBS (v0.2.35-AttributeFix)",
+    "name": "SubD to NURBS (v0.2.26-AttributeFix)",
     "author": "oobma, Gemini (Final Architect) DeepSeek, Qwen (Consultants)",
     "version": (0, 2, 26),
     "blender": (4, 0, 0),
