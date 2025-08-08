@@ -5,8 +5,8 @@
 
 bl_info = {
     "name": "SubD to NURBS (v0.2.35-AttributeFix)",
-    "author": "oobma, Gemini (Final Architect) DeepSeek, Qwen (Consultants), Experto Matemático",
-    "version": (0, 2, 35),
+    "author": "oobma, Gemini (Final Architect) DeepSeek, Qwen (Consultants)",
+    "version": (0, 2, 26),
     "blender": (4, 0, 0),
     "location": "View3D > Sidebar > SubDtoNURBS",
     "description": "Convert subdivision surfaces to NURBS with robust fallback handling",
